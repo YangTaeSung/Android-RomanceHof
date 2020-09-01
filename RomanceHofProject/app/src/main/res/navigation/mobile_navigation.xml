@@ -25,14 +25,20 @@
 
     <fragment
         android:id="@+id/nav_map"
-        android:name="com.example.romancehof.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.example.romancehof.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
 
     <fragment
         android:id="@+id/nav_board"
-        android:name="com.example.romancehof.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.example.romancehof.ui.board.BoardFragment"
+        android:label="@string/menu_board"
+        tools:layout="@layout/fragment_board" />
+
+    <fragment
+        android:id="@+id/nav_tree"
+        android:name="com.example.romancehof.ui.tree.TreeFragment"
+        android:label="@string/menu_tree"
+        tools:layout="@layout/fragment_tree" />
 
 </navigation>

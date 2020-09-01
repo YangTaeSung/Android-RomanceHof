@@ -2,36 +2,49 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
+<!--
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
     </group>
-
-    <item android:title = "Func">
+-->
+    <item android:title = "Main">
         <menu>
             <item
-                android:id="@+id/nav_gallery"
-                android:icon="@drawable/ic_menu_gallery"
-                android:title="@string/menu_gallery" />
-            <item
-                android:id="@+id/nav_slideshow"
-                android:icon="@drawable/ic_menu_slideshow"
-                android:title="@string/menu_slideshow" />
+                android:id="@+id/nav_home"
+                android:icon="@drawable/shop"
+                android:title="@string/menu_home" />
         </menu>
     </item>
 
     <item android:title = "Info">
         <menu>
             <item
+                android:id="@+id/nav_tree"
+                android:icon="@drawable/garden"
+                android:title="@string/menu_tree" />
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/list"
+                android:title="@string/menu_gallery" />
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/chair"
+                android:title="@string/menu_slideshow" />
+        </menu>
+    </item>
+
+    <item android:title = "etc">
+        <menu>
+            <item
                 android:id="@+id/nav_map"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/location"
                 android:title="@string/menu_map" />
             <item
                 android:id="@+id/nav_board"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/question"
                 android:title="@string/menu_board" />
         </menu>
     </item>

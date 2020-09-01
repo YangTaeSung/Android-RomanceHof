@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".ui.tree.TreeFragment" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="낭만트리"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Romance Tree"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="378dp"
+                app:srcCompat="@drawable/treeimage" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="낭만포차의 새로운 포토존 낭만트리에서 낭만적인 추억을 담아가세요."
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="낭만트리는 낭만포차의 감성을 더해줄 조형물로\n여수 오동도의 상징인 동백나무를 표현하고 있습니다."
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="match_parent"
+                android:layout_height="418dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/lamp" />
+
+            <TextView
+                android:id="@+id/textView2544"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="포장마차 만석 표시등"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/textView25445"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="낭만포차 내의 모든 좌석이 가득 차면\n낭만트리 꼭대기 조명(만석 표시등)이 분홍색으로 점등됩니다.\n고객님들의 동선낭비를 줄이기 위해 멀리서도 한눈에 포장마차 여석 여부를 확인할 수 있도록 설계했습니다."
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="178dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="106dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/flowerd" />
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="67dp"
+                        android:layout_height="131dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/pinkflower" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/blackhansansregular"
+                        android:gravity="center_vertical"
+                        android:text="하얀색 조명 : 낭만포차 내 여석 있음"
+                        android:textColor="@color/beige"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/blackhansansregular"
+                        android:gravity="center_vertical"
+                        android:text="분홍색 조명 : 낭만포차 만석"
+                        android:textColor="@color/pink"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="67dp"
+                        android:layout_height="106dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/flowerc" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/blackhansansregular"
+                        android:gravity="center_vertical"
+                        android:text="조명 없음 : 낭만포차 개장 안함"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="match_parent"
+                android:layout_height="315dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/key" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="낭만트리 자물쇠 달기"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="가족, 연인, 친구들과 쌓은 낭만포차에서의 추억을\n자룸쇠에 담아 낭만트리에 걸어주세요."
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

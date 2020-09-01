@@ -9,7 +9,8 @@
 
     <string name="menu_home">여수낭만포차</string>
     <string name="menu_gallery">포장마차 소개</string>
-    <string name="menu_slideshow">예약 현황</string>
+    <string name="menu_slideshow">좌석 현황</string>
     <string name="menu_map">오시는 길</string>
     <string name="menu_board">문의사항</string>
+    <string name="menu_tree">낭만트리</string>
 </resources>

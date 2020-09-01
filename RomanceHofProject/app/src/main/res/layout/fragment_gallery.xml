@@ -1,22 +1,1099 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment">
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".ui.gallery.GalleryFragment" >
 
-    <TextView
-        android:id="@+id/text_gallery"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="85dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/star" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/blackhansansregular"
+            android:gravity="center_vertical"
+            android:text="포장마차 List"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/wkdrnseh" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="1.장군도"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="여수돌문어삼겹\n매운쭈꾸미삼합\n낙지해물삼합"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="딱새우회\n돌문어숙회\n갑오징어숙회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/gosuwlq" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="2.해녀집"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView271"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView191"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="돌문어해물삼합\n낙지쭈꾸미해물삼합\n딱새우회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView211"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="연포탕\n전복버터구이\n산낙지탕탕이"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/wkdehvhck" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="3.장도포차"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView272"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView192"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="돌문어삼합\n낙지삼합\n갑오징어숙회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView212"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="서대회무침\n낙지전복연포탕\n낙지탕탕이"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/ehftkswkrrma" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="4.돌산작금"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView273"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView193"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="돌문어묵은지삼합\n묵은지해물삼합\n서대회무"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="생선구이\n왕새우버터구이\n연포탕"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/gkghkeh" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="5.푸른섬 하화도"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView274"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView194"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="전복버터구이\n새우버터구이\n장흥한우육회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView214"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="산낙지탕탕이\n한우육회낙지탕탕이\n새우버터구이"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/thswnreh" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="6.손죽도 포차"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2132"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="낙지삼합\n딱새우회\n돌문어삼합"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2544"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="소라숙회\n낚지볶음\n닭발볶음"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/rktqmffptmdb" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="7.갓 블레스 유"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView276"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView196"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="모듬버터구이\n감바스\n왕새우버터구이"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView216"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="관자버터구이\n서대회무침\n갓품은보쌈"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/skdaksehtl" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="8.낭만도시"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView277"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView197"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="갑오징어숙회\n연포탕\n낙지해물삼합"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView217"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="딱새우회\n돌문어숙회\n소라숙"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/whdvhemdeo" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="9.쫑포등대"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView279"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView199"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="돌문어불족발볶음\n돌문어숙회\n왕새우버터구"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView219"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="전복버터구이\n돌문어숙회\n갑오징어숙회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/dutnqkaqkek" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="10.낭만여수밤바다"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2710"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1910"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="달달돼지갈비\n매운쭈꾸미삼합\n육탕물회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2110"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="낙지볶음\n돌문어숙회\n육회초밥"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/tkadbrdh" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="11.365섬의 낭만"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2711"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1911"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="돌문어삼합\n매운쭈꾸미삼합\n낙지해물삼합"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="딱새우회\n낭만닭갈비\n갑오징어숙회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/ghlfmfvnadmsrkt" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="12.해를 품은 갓"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2712"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1912"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="모듬숙회\n무뼈닭발\n낙지해물삼합"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="딱새우회\n돌문어숙회\n소불고기"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/ehdrhwl" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="13.동고지명품포차"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2713"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1913"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="금풍생이구이\n낙지연포탕\n낙지해물삼합"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2113"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="딱새우회\n돌문어숙회\n홍합탕"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/ehdqorditlwkd" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="14.동백야시장"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2714"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1914"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="불쭈꾸미삼겹볶음\n매운쭈꾸미삼합\n활어회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2114"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="오징어회\n돌문어숙회\n염통꼬치"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/qlfjdrlf" />
+
+            <TextView
+                android:id="@+id/textView1515"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="15.비렁길로맨스"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2715"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1915"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="여수돌문어삼합\n매운쭈꾸미삼합\n소문난숙회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2115"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="한우육회\n돌문어숙회\n낙지호롱이"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/ehdqorditlwkd" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="16.동백골 기러기"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2716"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1916"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="꽃게탕\n쭈꾸미삼합\n낙지탕탕이"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2116"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="해물오뎅탕\n문어숙회\n문어소라숙회"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/ahfoqkfka" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="17.사도의 모래바람"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2717"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1917"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="해물알탕\n문소라갓보쌈\n해물알탕"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2117"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="낙지호롱이\n낙지탕탕이\n해물삼합"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_marginTop="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/thflqkek" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="18.소리바다"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/textView2718"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/blackhansansregular"
+                android:gravity="center_horizontal"
+                android:text="대표메뉴"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1918"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="육회탕탕이\n쭈꾸미삼합\n낙지해물삼합"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2118"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/blackhansansregular"
+                    android:gravity="center_horizontal"
+                    android:text="왕새우버터구이\n돌문어숙회\n닭발철판볶음"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
